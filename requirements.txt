@@ -1,7 +1,7 @@
 # Core: medical imaging + radiomics + survival analysis
 pydicom>=2.4
 SimpleITK>=2.2
-pyradiomics>=3.0
+pyradiomics @ git+https://github.com/AIM-Harvard/pyradiomics.git@8ed579383b44806651c463d5e691f3b2b57522ab
 rt-utils>=1.2
 lifelines>=0.27
 scikit-learn>=1.3
@@ -11,3 +11,4 @@ pandas>=2.0
 numpy>=1.24
 matplotlib>=3.7
 PyYAML>=6.0
+idc-index
