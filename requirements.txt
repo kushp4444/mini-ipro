@@ -1,0 +1,13 @@
+# Core: medical imaging + radiomics + survival analysis
+pydicom>=2.4
+SimpleITK>=2.2
+pyradiomics>=3.0
+rt-utils>=1.2
+lifelines>=0.27
+scikit-learn>=1.3
+
+# Data + plotting + config
+pandas>=2.0
+numpy>=1.24
+matplotlib>=3.7
+PyYAML>=6.0

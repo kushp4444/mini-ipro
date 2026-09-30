@@ -1,0 +1,18 @@
+# Which radiomic features to compute and how.
+# imageType.Original = compute on the raw CT (no filters). Start here; add
+# wavelet/LoG filters later if you want a bigger feature set.
+imageType:
+  Original: {}
+
+featureClass:
+  shape: []        # size, roundness vs spikiness, surface area...
+  firstorder: []   # mean/median/skew of intensities inside the tumor
+  glcm: []         # texture: how pixel intensities relate to neighbors
+  glrlm: []        # texture: runs of similar intensities
+
+setting:
+  binWidth: 25                 # intensity discretization for texture features
+  resampledPixelSpacing: [1, 1, 1]  # resample to 1mm cubic voxels first
+  interpolator: sitkBSpline
+  normalize: true
+  force2D: false

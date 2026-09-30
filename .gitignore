@@ -1,0 +1,11 @@
+# Never commit patient data or bulky artifacts
+data/raw/
+data/processed/
+outputs/
+*.dcm
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
